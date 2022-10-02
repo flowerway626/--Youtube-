@@ -1,0 +1,139 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+   font-family: 'Noto Sans TC', sans-serif; 
+  margin: 0;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+/* <!--------------------------- header 搜尋 ---------------------------> */
+
+#header {
+  width: 80%;
+  height: 20%;
+  position: fixed;
+  right: 0;
+  background: lightpink;
+  z-index: 1;
+}
+
+#header .row {
+  text-align: center;
+}
+
+#header .row .col {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 1em 0;
+  margin: 0;
+  height: 50%;
+  border-bottom: 1px solid #000;
+}
+
+#header .col li {
+  display: inline-block;
+}
+
+#header .col a {
+  background: rgb(220, 220, 220);
+  padding: 1px;
+}
+
+#header .button {
+  top: 10%;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #000;
+}
+
+#header .button li {
+  display: inline-block;
+  padding: 0 0.3rem;
+}
+
+#header .button li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  background: rgb(241, 240, 240);
+  border: rgb(220, 217, 217);
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 15px;
+}
+
+#header .button li a:hover {
+  background: #aaa;
+  color: #fff;
+  transform: 1s;
+}
+
+/* <!--------------------------- Sidebar 側邊欄 ---------------------------> */
+
+#sidebar {
+  width: 20%;
+  height: 100%;
+  float: left;
+  position: fixed;
+  background: #fff;
+}
+
+#sidebar .container {
+  width: 95%;
+  margin: auto;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#sidebar .col {
+  width: 100%;
+}
+
+#sidebar .col li {
+  list-style: none;
+  padding: 5%;
+}
+
+#sidebar .col i {
+  padding-right: 1rem;
+}
+
+#sidebar .col li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+}
+
+#sidebar .col li:hover {
+  background: #ccc;
+}
+
+#sidebar .col p {
+  color: rgb(92, 92, 92);
+  font-size: 0.8rem;
+}
+
+
+
+/* <!--------------------------- section 內容三欄 ---------------------------> */
+#content {
+  width: 80%;
+  top: 20%;
+  float: right;
+  position: relative;
+  background: skyblue;
+}
+
+#content .container02 {
+  position: absolute;
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+
+
