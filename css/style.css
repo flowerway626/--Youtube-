@@ -13,24 +13,26 @@ body {
   height: 100%;
 }
 
-/* 網頁捲軸【寬度】 */
+/* ------------------------------- 卷軸樣式設定 ------------------------------ */
+
+/*捲軸寬度 */
 ::-webkit-scrollbar {
   width: 8px;
   margin-right: 2px;
 }
 
-/* 網頁捲軸【背景】顏色 */
+/* 捲軸背景 */
 ::-webkit-scrollbar-track {
   background: #fff;
 }
 
-/* 網頁捲軸【把手】顏色 */
+/* 捲軸把手 */
 ::-webkit-scrollbar-thumb {
   background: gray;
   border-radius: 1000px;
 }
 
-/* 網頁捲軸【滑過時】把手的顏色 */
+/* 捲軸滑過時 */
 ::-webkit-scrollbar-thumb:hover {
   background: #aaa;
 }
@@ -64,6 +66,7 @@ body {
   padding: 0;
 }
 
+/* tw 地域 */
 #icon .YTlogo p {
   font-size: 0.5rem;
   left: 0%;
@@ -84,40 +87,57 @@ body {
   z-index: 1;
 }
 
-#header .row {
-  text-align: center;
-}
-
 #header .row .col {
   box-sizing: border-box;
   width: 100%;
-  padding: 1em 0;
+  padding: 0.5em 0;
   margin: 0;
   height: 50%;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid lightgray;
 }
 
 #header .col li {
   display: inline-block;
+  box-sizing: border-box;
+  padding: 0.5rem;
+}
+
+#header .row .col li:nth-child(3) {
+  margin-right: 10%;
 }
 
 #header .col input {
-  width: 40%;
-  height: 20px;
+  width: 55%;
+  height: 30px;
+  margin-left: 1rem;
 }
 
-#header .col a {
-  background: rgb(220, 220, 220);
-  padding: 1px;
+#header .col .account {
+  background: lightcoral;
+  border-radius: 1000px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+#header .col .account a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
 #header .button {
+  text-align: center;
+
+  box-sizing: border-box;
   top: 10%;
   margin: 0;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #000;
+  height: 50%;
+  padding: 1rem 0;
+  border-bottom: 1px solid lightgray;
 }
 
+/* 頂端分類 */
 #header .button li {
   display: inline-block;
   padding: 0 0.3rem;
@@ -152,10 +172,15 @@ body {
 }
 
 #sidebar .container {
-  width: 95%;
+  width: 100%;
   margin: auto;
   height: 100%;
   overflow-y: scroll;
+}
+
+#sidebar hr {
+  border-color: lightgray;
+  width: 90%;
 }
 
 #sidebar .col {
@@ -164,7 +189,7 @@ body {
 
 #sidebar .col li {
   list-style: none;
-  padding: 5%;
+  padding: 0 24px;
 }
 
 #sidebar .col i {
@@ -175,6 +200,7 @@ body {
   text-decoration: none;
   color: #000;
   font-size: 0.8rem;
+  line-height: 2.3rem;
 }
 
 #sidebar .col li:hover {
@@ -184,9 +210,28 @@ body {
 #sidebar .col p {
   color: rgb(92, 92, 92);
   font-size: 0.8rem;
+  line-height: 2.3rem;
+  margin: 0;
+  padding: 0 24px;
 }
 
+#sidebar .link01,
+.link02 {
+  padding: 12px 24px 0 24px;
+}
 
+#sidebar .link01 a,
+.link02 a {
+  text-decoration: none;
+  font-size: 0.5rem;
+  color: gray;
+}
+
+#sidebar .copyright {
+  color: #909090;
+  font-size: 0.5rem;
+  padding: 16px 24px;
+}
 
 /* <!--------------------------- section 內容三欄 ---------------------------> */
 #content {
@@ -202,7 +247,6 @@ body {
   position: absolute;
   box-sizing: border-box;
   margin: 0.5rem;
-
 }
 
 #content .row {
@@ -231,11 +275,19 @@ body {
 }
 
 #content .card h4 {
+  box-sizing: border-box;
   font-weight: normal;
   width: 80%;
   float: right;
-  margin: 0 0.1rem 0.5rem 0;
+  padding: 0 24px 5px 0;
+  margin: 0;
   font-size: 0.7rem;
+  line-height: 20px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 #content .card p {
