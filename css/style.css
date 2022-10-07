@@ -126,12 +126,12 @@ body {
 #header .row .col li:first-child {
   /* 左邊空格 */
   margin-left: 5rem;
-  padding: 0.5rem 0 0.5rem 1rem;
+  padding: 0.8rem 0 0.8rem 0rem;
 }
 
 /* 搜尋放大鏡 */
 #header .row .col li:nth-child(2) {
-  background: rgb(234, 234, 234);
+  background: rgb(243, 243, 243);
   /* 右邊空格 */
   margin-right: 5px;
   border: 1px solid #aaa;
@@ -141,7 +141,7 @@ body {
 #header .row .col li:nth-child(3) {
   /* 右邊空格 */
   margin-right: 20%;
-  background: rgb(236, 236, 236);
+  background: rgb(243, 243, 243);
   border-radius: 1000px;
   padding: 0.5rem 0.7rem;
 }
@@ -297,7 +297,6 @@ body {
   width: 24%;
   box-sizing: border-box;
   margin: 1rem 0.3rem 1rem 0;
-
 }
 
 #content .row .card img#video {
@@ -343,6 +342,7 @@ body {
   font-size: 0.5rem;
   width: 80%;
   float: right;
+  color: #000;
 }
 
 /* 合輯影片 */
