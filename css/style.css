@@ -248,7 +248,7 @@ body {
 }
 
 #sidebar .col li:hover {
-  background: #ccc;
+  background: rgb(226, 226, 226);
 }
 
 #sidebar .col p {
