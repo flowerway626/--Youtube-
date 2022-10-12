@@ -225,6 +225,8 @@ body {
 
 #sidebar .col {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* 側邊欄選單 */
@@ -306,9 +308,26 @@ body {
   position: relative;
 }
 
+#content .card:hover {
+  transition-delay: 2s;
+  /* transform: scale(1.2); */
+  transition: 0.3s;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
 #content .row .card img#video {
   width: 100%;
   height: 25%;
+}
+
+#content .row .card p:nth-child(11) {
+  width: 100%;
+  height: 25px;
+  background: slategray;
+  opacity: 0.5;
 }
 
 #content .row .card .timer {
@@ -325,6 +344,19 @@ body {
   top: 49%;
   right: 1%;
   z-index: 1;
+}
+
+#content .row .card .timer:hover::after {
+  content: '將游標懸停在上方即可播放';
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  width: 150px;
+  padding: 4px;
+  position: absolute;
+  top: -15%;
+  right: 1%;
 }
 
 #content .row .card img#logo {
